@@ -1,4 +1,4 @@
 ARG version
 FROM almalinux:${version:-8}
-ENTRYPOINT cat /etc/*release
+RUN cat /etc/*release
 CMD [ "sleep","100" ]
